@@ -6,6 +6,7 @@ dist/
 out/
 publish/
 artifacts/
+target/
 
 # AI 临时产物 / 项目内工具
 .ai-tmp/
