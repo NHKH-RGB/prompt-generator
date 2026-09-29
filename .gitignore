@@ -1,0 +1,36 @@
+# 构建产物
+build/
+bin/
+obj/
+dist/
+out/
+publish/
+artifacts/
+
+# AI 临时产物 / 项目内工具
+.ai-tmp/
+vendor/
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# 大文件与归档
+*.7z
+*.rar
+*.zip
+*.part*.rar
+_archive/
+
+# 系统/临时
+Thumbs.db
+Desktop.ini
+*.tmp
+~$*
+*.bak
+
+# 本地敏感配置（含凭据）
+.claude/settings.local.json
+*.local

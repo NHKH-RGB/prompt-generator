@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>提示词生成器 · Prompt Generator</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-zh">提示词生成器</span>
+    <span class="brand-en">Prompt Generator</span>
+  </div>
+  <div class="controls">
+    <div class="seg" id="modeSeg" role="tablist" aria-label="规范模式">
+      <button data-mode="full" role="tab">完整</button>
+      <button data-mode="costar" role="tab">CO-STAR</button>
+      <button data-mode="rtfc" role="tab">精简</button>
+    </div>
+    <div class="seg" id="langSeg" role="tablist" aria-label="输出语言">
+      <button data-lang="zh" role="tab">中文</button>
+      <button data-lang="en" role="tab">English</button>
+      <button data-lang="bi" role="tab">双语</button>
+    </div>
+  </div>
+  <div class="actions">
+    <button id="btnExample" class="btn">示例</button>
+    <button id="btnClear" class="btn">清空</button>
+    <button id="btnDownload" class="btn">下载 .md</button>
+    <button id="btnCopy" class="btn primary">复制提示词</button>
+  </div>
+</header>
+
+<main>
+  <section class="form-pane">
+    <p class="mode-desc" id="modeDesc"></p>
+    <div id="fields"></div>
+  </section>
+  <section class="preview-pane">
+    <div class="preview-head">
+      <span class="preview-title">预览 Preview</span>
+      <span class="preview-hint">标签随语言切换，内容原样输出（不自动翻译）</span>
+    </div>
+    <pre id="preview" class="preview"></pre>
+  </section>
+</main>
+
+<div id="toast" class="toast" role="status"></div>
+<script src="app.js"></script>
+</body>
+</html>
